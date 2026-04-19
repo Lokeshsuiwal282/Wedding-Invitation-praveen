@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✅ Meta Tags for Social Media -->
+  <meta property="og:title" content="💖 Sonu & Kamlesh's Wedding Invitation 💖">
+  <meta property="og:description"
+    content="Join us for a grand wedding celebration on 22nd November 2026 at Jharda Wali Dhani, Birol, Nawalgarh, Jhunjhunu (Raj.). Click to view details & directions!">
+  <meta property="og:image" content="https://yourwebsite.com/sonu_kamlesh_wedding.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/wedding-invitation.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sonu & Kamlesh's Wedding Invitation">
+  <meta name="twitter:description"
+    content="Celebrate love and togetherness with us on 22nd November 2026! Click for directions and blessings.">
+  <meta name="twitter:image" content="https://yourwebsite.com/sonu_kamlesh_wedding.jpg">
+  <title> प्रवीण & रिंकू - Wedding Invitation</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FDF2E9 0%, #FFF8F0 50%, #FDF2E9 100%);
+      color: #5d4037;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .traditional-bg {
+      background: linear-gradient(rgba(253, 242, 233, 0.95), rgba(255, 248, 240, 0.95)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="gold-pattern" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M0 0 L100 0 L100 100 L0 100 Z" fill="%23D4A373" opacity="0.02"/><circle cx="50" cy="50" r="10" fill="%23FF6B6B" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23gold-pattern)"/></svg>') repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .hero-bg {
+      background: linear-gradient(rgba(139, 26, 26, 0.7), rgba(139, 26, 26, 0.7)),
+        url('backgroudimage.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      border-bottom: 5px solid #D4A373;
+    }
+
+    .ornament-bg {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="floral" patternUnits="userSpaceOnUse" width="100" height="100"><path d="M10 50 Q50 10 90 50 Q50 90 10 50 Z" fill="%23D4A373" opacity="0.05"/><circle cx="50" cy="50" r="5" fill="%23FF6B6B" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23floral)"/></svg>');
+      opacity: 0.15;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+
+
+    @keyframes gentleFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-15px) rotate(0.5deg);
+      }
+    }
+
+    .marigold-spin {
+      animation: spin 25s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .kalash-glow {
+      animation: kalashFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes kalashFloat {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .swastika-rotate {
+      animation: subtleRotate 10s linear infinite;
+    }
+
+    @keyframes subtleRotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .text-maroon {
+      color: #8B1A1A;
+    }
+
+    .text-gold {
+      color: #D4A373;
+    }
+
+    .bg-maroon {
+      background-color: #8B1A1A;
+    }
+
+    .bg-gold {
+      background-color: #D4A373;
+    }
+
+    .btn-hover:hover {
+      background-color: #c49060 !important;
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(212, 163, 115, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .ganesh-blessing {
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        filter: drop-shadow(0 0 10px #D4A373);
+      }
+
+      to {
+        filter: drop-shadow(0 0 20px #FFD700);
+      }
+    }
+
+    .namaste-hindi {
+      font-family: 'Noto Sans Devanagari',
+        sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      background: linear-gradient(45deg, #D4A373, #FFD700, #FF6B6B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .namaste-hindi {
+        font-size: 3.5rem;
+      }
+    }
+
+    @keyframes subtleShimmer {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .mehendi-hands {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      animation: fadeIn 0.5s ease;
+    }
+
+    .modal-content {
+      margin: 3% auto;
+      width: 95%;
+      max-width: 900px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #FFF8DC, #FAF0E6);
+      border: 6px double #D4A373;
+      box-shadow: 0 30px 80px rgba(212, 163, 115, 0.5);
+    }
+
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #D4A373;
+    }
+
+    .close:hover {
+      color: #FF6B6B;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px) rotate(1deg);
+      box-shadow: 0 20px 40px rgba(212, 163, 115, 0.2);
+      transition: all 0.5s ease;
+    }
+
+    .traditional-border {
+      border: 3px double #D4A373;
+      background-clip: padding-box;
+    }
+
+    .card-ganesh {
+      filter: drop-shadow(0 0 15px #FFD700);
+    }
+
+    .program-table {
+      border-collapse: separate;
+      border-spacing: 8px;
+      width: 100%;
+    }
+
+    .program-table td {
+      padding: 10px 15px;
+      background: #FFF3E0;
+      border: 2px solid #D4A373;
+      border-radius: 12px;
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+
+    .family-box {
+      background: #FFF8DC;
+      border: 3px double #8B1A1A;
+      padding: 15px;
+      border-radius: 15px;
+      margin: 10px 0;
+    }
+
+    .family-title {
+      font-weight: 700;
+      color: #8B1A1A;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+
+    .family-title1 {
+      font-weight: 700;
+      color: #a4a705;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .mehendi-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media (max-width: 767px) {
+      .couple-photos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .marigold-left {
+        left: 5px !important;
+        top: 20% !important;
+      }
+
+      .marigold-right {
+        right: 5px !important;
+        bottom: 20% !important;
+      }
+
+      .namaste-hindi {
+        font-size: 2rem;
+      }
+
+      .hero-names {
+        font-size: 2.5rem !important;
+      }
+    }
+
+    .hero-bg {
+  background: linear-gradient(135deg, #7c2d12, #b45309, #f59e0b);
+}
+
+/* Couple Image */
+.couple-img {
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #D4A373;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  margin: auto;
+  transition: 0.4s ease;
+}
+
+.couple-img:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .couple-img {
+    width: 240px;
+    height: 320px;
+  }
+}
+
+/* Names */
+.name {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Custom Animations */
+@keyframes spinSlow {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 10s linear infinite;
+}
+
+@keyframes bounceSlow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2s infinite;
+}
+  </style>
+</head>
+
+<body class="relative">
+
+  <!-- Backgrounds -->
+  <div class="traditional-bg"></div>
+  <div id="particles-js"></div>
+  <div class="fixed inset-0 ornament-bg pointer-events-none"></div>
+
+  <!-- Hero Section -->
+  <!-- <section class="hero-bg min-h-screen flex flex-col items-center justify-center relative z-10 px-6">
+    <div class="text-center text-white space-y-8 relative mb-12">
+      <div class="absolute top-10 left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <i class="fas fa-vase text-4xl text-yellow-300 kalash-glow"></i>
+        <span class="text-4xl" style="color: #FF6B6B;">☸</span class="swastika-rotate">
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <i class="fas fa-vase text-4xl text-yellow-300 kalash-glow scale-x-[-1]"></i>
+        <span class="text-4xl" style="color: #FF6B6B;">☸</span class="swastika-rotate" style="transform: scaleX(-1);">
+      </div>
+
+      <div data-aos="fade-down">
+        <img src="गणेश_जी.png" alt="Ganesha" class="w-32 md:w-40 mx-auto mb-4 card-ganesh ganesh-blessing">
+        <h1 class="namaste-hindi">श्री गणेशाय नमः</h1>
+        <p class="text-lg md:text-2xl mt-2">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः। <br>
+          निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+      </div>
+
+      <div
+        class="couple-photos mt-8 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 lg:space-x-12 relative">
+        <div class="relative text-center">
+          <img src="ps1.jpg" alt="Priyanka" class="couple-img-circle mx-auto">
+          <h3 class="hero-names text-3xl md:text-5xl font-bold mt-4 namaste-hindi"
+            style="font-family: 'Dancing Script', cursive;">
+            प्रियंका
+          </h3>
+        </div>
+        <img src="saang.png" alt="Mehendi Hands" class="w-16 md:w-20 mehendi-hands">
+        <div class="relative text-center">
+          <img src="ps2.jpg" alt="Kamlesh" class="couple-img-circle mx-auto">
+          <h3 class="hero-names text-3xl md:text-5xl font-bold mt-4 namaste-hindi"
+            style="font-family: 'Dancing Script', cursive;">
+            अनिल
+          </h3>
+        </div>
+      </div>
+      <div class="couple-photos mt-8 flex justify-center space-x-6 md:space-x-12 relative">
+        <div class="relative">
+          <img src="p1.jpg" alt="Sonu" class="couple-img-circle">
+          <h3 class="hero-names text-3xl md:text-5xl font-bold mt-4 namaste-hindi"
+            style="font-family: 'Dancing Script', cursive;">
+            प्रवीण
+          </h3>
+
+        </div>
+        <img src="saang.png" alt="Mehendi Hands" class="w-16 md:w-20 mehendi-hands">
+
+        <div class="relative">
+          <img src="p2.jpg" alt="Kamlesh" class="couple-img-circle">
+          <h3 class="hero-names text-3xl md:text-5xl font-bold mt-4 namaste-hindi"
+            style="font-family: 'Dancing Script', cursive;">
+            रिंकू
+          </h3>
+        </div>
+      </div>
+      <div class="absolute top-20 left-2 marigold-spin opacity-90">
+        <i class="fas fa-seedling" style="font-size: 3rem; color: #FFD700;"></i>
+      </div>
+      <div class="absolute bottom-20 right-1 marigold-spin opacity-90 transform scale-x-[-1]">
+        <i class="fas fa-seedling" style="font-size: 3rem; color: #FFD700;"></i>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="hero-bg min-h-screen flex items-center justify-center px-4 py-10 relative overflow-hidden">
+
+  <!-- Decorative Icons -->
+  <div class="absolute top-6 left-1/2 -translate-x-1/2 flex gap-4">
+    <i class="fas fa-vase text-3xl text-yellow-400 animate-pulse"></i>
+    <span class="text-3xl text-red-400 animate-spin-slow">☸</span>
+  </div>
+
+  <div class="text-center text-white max-w-6xl w-full">
+
+    <!-- Ganesh Section -->
+    <div data-aos="fade-down">
+      <img src="गणेश_जी.png" class="w-24 md:w-36 mx-auto mb-4 drop-shadow-lg">
+      <h1 class="text-2xl md:text-4xl font-bold text-yellow-300">
+        श्री गणेशाय नमः
+      </h1>
+      <p class="mt-3 text-sm md:text-lg leading-relaxed">
+        वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः। <br>
+        निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 p-1 md:p-6">
+
+    <!-- Couple Section -->
+    <div class="items-center">
+      <img src="praveen.png" alt="Praveen &amp; Rinku" style="border-radius: 8px;border: 3px solid #ff9b00;">
+      <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center justify-center namaste-hindi">01 May 2026</h3>
+    </div>
+
+    <!-- Second Couple -->
+    <div class="items-center">
+      <img src="priyanka praveen.png" alt="Priyanka & Anil" style="border-radius: 8px;border: 3px solid #ffc800;">
+      <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center justify-center namaste-hindi">29 April 2026</h3>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Main Invitation -->
+  <section class="py-12 relative z-10">
+    <div class="container mx-auto max-w-6xl">
+      <div
+        class="bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-gold invitation-card traditional-border">
+        <div
+          class="bg-gradient-to-r from-red-700 via-maroon to-pink-700 h-24 md:h-32 flex items-center justify-center relative">
+          <img src="Golden_Shubh.png" alt="Shubh Vivah" class="h-24 md:h-36">
+          <i
+            class="fas fa-vase absolute left-4 top-1/2 transform -translate-y-1/2 text-2xl md:text-4xl text-yellow-300 hidden md:block"></i>
+          <i
+            class="fas fa-vase absolute right-4 top-1/2 transform -translate-y-1/2 text-2xl md:text-4xl text-yellow-300 scale-x-[-1] hidden md:block"></i>
+        </div>
+
+        <div class="p-3 md:p-20 text-center space-y-8">
+          <div
+            class="bg-gradient-to-br from-yellow-50 to-orange-50 p-4 md:p-6 rounded-2xl border-2 border-gold traditional-border">
+            <h3 class="text-xl md:text-2xl font-bold text-maroon mb-2">खरेशिया परिवार की ओर से</h3>
+            <p class="text-sm md:text-lg text-gray-700">
+              श्री बंशीधर खरेशिया<br>
+              S/o पुत्र स्व.श्री बिरदूराम जी खरेशिया<br>
+              ग्राम: कसेरू, वाया: मुकुन्दगढ़, जिला-झुंझुनू (राज.)<br>
+              मो.: 9983616540, 8058257373, 8739889914
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-3xl md:text-5xl font-bold text-gold mb-4" style="font-family: 'Playfair Display', serif;">
+              हृदय में आनंद के साथ
+            </h2>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+              खरेशिया एवं दुहारिया परिवार आपको उनके प्रिय बच्चों के मिलन का उत्सव मनाने के लिए आमंत्रित करते हैं
+            </p>
+          </div>
+
+
+
+          <div class="flex justify-center my-6 md:my-10">
+            <img src="shadi_Card.png" alt="Mehendi Hands" class="w-40 md:w-56 mehendi-hands">
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4 md:gap-12 mt-12">
+            <div class="bg-gradient-to-br from-amber-50 to-orange-100 p-6 md:p-10 rounded-3xl border-4 border-gold shadow-xl event-card traditional-border">
+              <div class="flex items-center justify-center gap-3 mb-3">
+                <div class="flex items-center justify-center gap-4">
+                  <h3 class="text-4xl font-bold text-maroon" style="font-family: 'Noto Sans Devanagari', sans-serif;">
+                    प्रवीण
+                  </h3>
+                  <img src="saang.png" alt="Mehendi Hands" class="w-14 md:w-20">
+                  <h3 class="text-4xl font-bold text-maroon" style="font-family: 'Noto Sans Devanagari', sans-serif;">
+                    रिंकू
+                  </h3>
+                </div>
+              </div>
+              <h4 class="text-2xl md:text-3xl font-bold text-red-800 mb-6 flex items-center justify-center">
+                <i class="fas fa-ring mr-2 text-gold"></i>विवाह समारोह
+              </h4>
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl mb-3"><i
+                  class="fas fa-calendar-alt text-gold"></i> शुक्रवार, 01 मई 2026</p>
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl mb-3"><i
+                  class="fas fa-clock text-gold"></i> सायं ५:१५ बजे</p>
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl"><i
+                  class="fas fa-map-marker-alt text-gold"></i> बारात बस द्वारा कसेरू से नेवरी जायेगी।</p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-pink-50 to-red-100 p-6 md:p-10 rounded-3xl border-4 border-gold shadow-xl event-card traditional-border">
+              <div class="flex items-center justify-center gap-3 mb-3">
+                <div class="flex items-center justify-center gap-4">
+                  <h3 class="text-4xl font-bold text-maroon" style="font-family: 'Noto Sans Devanagari', sans-serif;">
+                    प्रियंका
+                  </h3>
+                  <img src="saang.png" alt="Mehendi Hands" class="w-14 md:w-20">
+                  <h3 class="text-4xl font-bold text-maroon" style="font-family: 'Noto Sans Devanagari', sans-serif;">
+                    अनिल
+                  </h3>
+                </div>
+              </div>
+              <h4 class="text-2xl md:text-3xl font-bold text-red-800 mb-6 flex items-center justify-center">
+                <i class="fas fa-users text-gold mr-2"></i>बारात का स्वागत
+              </h4>
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl mb-3"><i
+                  class="fas fa-calendar-alt text-gold"></i> बुधवार, 29 अप्रैल 2026</p>
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl mb-3"><i
+                  class="fas fa-clock text-gold"></i> सायं 5:15 बजे</p>
+
+              <p class="flex items-center justify-center gap-3 text-lg md:text-xl"><i class="fas fa-home text-gold"></i>
+                खरेशिया परिवार निवास</p>
+            </div>
+          </div>
+
+          <!-- QR + Google Maps Button -->
+          <div class="mt-12 md:mt-16 flex flex-col items-center space-y-4">
+            <div class="bg-white p-4 md:p-6 rounded-2xl shadow-xl border-2 border-gold traditional-border">
+              <img src="location.png" alt="QR Code" class="w-36 md:w-36 mx-auto">
+              <p class="text-sm md:text-base text-center mt-2 text-gray-600 font-medium">स्कैन करके स्थान देखें</p>
+            </div>
+            <a href="https://www.google.com/maps?q=27.9545359,75.2739247&z=17&hl=en" target="_blank"
+              class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition transform hover:scale-105">
+              <i class="fas fa-map-marked-alt"></i> Google Maps में देखें
+            </a>
+          </div>
+
+          <div class="mt-8 md:mt-12">
+            <button onclick="openModal()"
+              class="bg-maroon text-white font-bold py-4 md:py-5 px-8 md:px-12 rounded-full btn-hover text-xl md:text-2xl shadow-2xl">
+              <i class="fas fa-envelope-open-text mr-3"></i> आमंत्रण पत्र देखें
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-gradient-to-r from-red-700 via-maroon to-pink-700 h-20 md:h-24 flex items-center justify-center gap-6">
+          <img src="An_Indian_Traditional.png" alt="Namaste" class="h-12 md:h-20">
+          <h1 class="namaste-hindi text-xl md:text-2xl">शुभ विवाह</h1>
+          <img src="An_Indian_Traditional.png" alt="Namaste" class="h-12 md:h-20 scale-x-[-1]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Invitation Modal -->
+  <div id="invitationModal" class="modal">
+    <div class="modal-content invitation-modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <!-- Page 1 -->
+      <div class="p-3 md:p-2 text-center">
+        <img src="गणेश_जी.png" alt="Ganesha" class="w-28 mx-auto card-ganesh mb-4 mt-3">
+        <h2 class="text-2xl md:text-3xl font-bold text-maroon mb-6">✦ शुभ विवाह ✦</h2>
+      </div>
+
+      <!-- Family Sections -->
+      <div class="p-4 md:p-2 bg-yellow-50 rounded-3xl border-4 border-gold traditional-border mb-5">
+        <div class="grid md:grid-cols-2 gap-6 p-1 md:p-6">
+          <div class="family-box">
+            <h3 class="family-title">सौ.कां. प्रियंका</h3>
+            <h3 class="family-title1">(खरेशिया परिवार)</h3>
+            <p class="text-sm leading-relaxed">
+              <strong>सुपौत्री:</strong> श्रीमती पतासी देवी एवं स्व. श्री बिरदूराम जी खरेशिया<br>
+              <strong>सुपुत्री:</strong> श्रीमती दोपती देवी एवं श्री बंशीधर खरेशिया<br>
+              <strong>निवासी:</strong> कसेरू, वाया मुकुंदगढ़, जिला झुंझुनूं (राज.)
+            </p>
+          </div>
+
+          <div class="family-box">
+            <h3 class="family-title">चि.अनिल</h3>
+            <h3 class="family-title1">(भोड़ीवाल परिवार)</h3>
+            <p class="text-sm leading-relaxed">
+              <strong>सुपौत्री:</strong> स्व. श्रीमती देवी जी एवं स्व.श्री मेघाराम जी भोड़ीवाल<br>
+              <strong>सुपुत्री:</strong> श्रीमतीराजबाला देवी एवं श्री पप्पुराम जी भोड़ीवाल<br>
+              <strong>निवासी:</strong> बुटियां, चूरू, जिला झुंझुनूं (राज.)
+            </p>
+          </div>
+        </div>
+
+        <!-- Program Table -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-maroon mb-6">वैवाहिक कार्यक्रम</h2>
+        <table class="program-table">
+          <tr>
+            <td><strong>गणेश पूजन</strong></td>
+            <td>19 अप्रैल 2026, रविवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>लगन पूजन</strong></td>
+            <td>22 अप्रैल 2026, बुधवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>हल्दहाथ बान</strong></td>
+            <td>26 अप्रैल 2026, रविवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>महिला संगीत</strong></td>
+            <td>27 अप्रैल 2026, सोमवार</td>
+            <td>सायं 7:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>चाक-भात</strong></td>
+            <td>29 अप्रैल 2026, बुधवार</td>
+            <td>सायं 3:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>बारात स्वागत</strong></td>
+            <td>29 अप्रैल 2026, बुधवार</td>
+            <td>सायं 5:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>पाणिग्रहण संस्कार</strong></td>
+            <td>29 अप्रैल 2026, बुधवार</td>
+            <td>शुभलग्नानसार</td>
+          </tr>
+          <tr>
+            <td><strong>विदाई</strong></td>
+            <td>30 अप्रैल 2026, गुरुवार</td>
+            <td>प्रातः काल</td>
+          </tr>
+        </table>
+      </div>
+
+
+      <!-- Family Sections 2 -->
+      <div class="p-4 md:p-2 bg-yellow-50 rounded-3xl border-4 border-gold traditional-border mb-5">
+        <div class="grid md:grid-cols-2 gap-6 p-1 md:p-6">
+          <div class="family-box">
+            <h3 class="family-title">चि. प्रवीण</h3>
+            <h3 class="family-title1">(खरेशिया परिवार)</h3>
+            <p class="text-sm leading-relaxed">
+              <strong>सुपौत्री:</strong> श्रीमती पतासी देवी एवं स्व. श्री बिरदूराम जी खरेशिया<br>
+              <strong>सुपुत्री:</strong> श्रीमती दोपती देवी एवं श्री बंशीधर खरेशिया<br>
+              <strong>निवासी:</strong> कसेरू, वाया मुकुंदगढ़, जिला झुंझुनूं (राज.)
+            </p>
+          </div>
+
+          <div class="family-box">
+            <h3 class="family-title">सौ.कां.रिंकू</h3>
+            <h3 class="family-title1">(दुहारिया परिवार)</h3>
+            <p class="text-sm leading-relaxed">
+              <strong>सुपौत्री:</strong> श्रीमतीशांति देवी एवं श्री ताराचन्द जी दुहारिया<br>
+              <strong>सुपुत्री:</strong> श्रीमती ललिता देवी एवं श्री बजरंगलाल जी दुहारिया<br>
+              <strong>निवासी:</strong> नेवरी, गुढ़ा, जिला झुंझुनूं (राज.)
+            </p>
+          </div>
+        </div>
+        <!-- Program Table -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-maroon mb-6">वैवाहिक कार्यक्रम</h2>
+        <table class="program-table">
+          <tr>
+            <td><strong>गणेश पूजन</strong></td>
+            <td>19 अप्रैल 2026, रविवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>लगन पूजन</strong></td>
+            <td>22 अप्रैल 2026, मंगलवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>प्रीतिभोज</strong></td>
+            <td>29 अप्रैल 2026, बुधवार</td>
+            <td>सायं 6:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>हल्दहाथ बान</strong></td>
+            <td>30 अप्रैल 2026, गुरूवार</td>
+            <td>सुबह 9:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>चाक-भात</strong></td>
+            <td>30 अप्रैल 2026, गुरूवार</td>
+            <td>सायं 4:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>निकासी</strong></td>
+            <td>01 मई 2026, शुक्रवार</td>
+            <td>दोपहर 2:15 बजे</td>
+          </tr>
+          <tr>
+            <td><strong>बारात प्रस्थान</strong></td>
+            <td>01 मई 2026, शुक्रवार</td>
+            <td>सायं 4:15 बजे</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="text-center p-6 rounded-b-2xl" style="background-color: rgb(122, 4, 55);">
+        <p class="text-lg namaste-hindi">कृपया महिलाओं का निमंत्रण भी इसी पत्रिका द्वारा स्वीकार करें।</p>
+        <p class="text-sm mt-2 namaste-hindi">नोट: बारात दिनांक 01 मई 2026, शुक्रवार को सायं 4.15 बजे कसेरू से नेवरी
+          जायेगी।</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 md:py-12 text-center relative overflow-hidden traditional-border"
+    style="background-color: rgb(122, 4, 55);">
+    <img src="गणेश_जी.png" alt="Ganesha"
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 md:w-48 opacity-60">
+    <p class="text-xl md:text-3xl mb-2 namaste-hindi">प्रेम और स्नेह के साथ,</p>
+    <p class="text-2xl md:text-4xl font-bold namaste-hindi">खरेशिया परिवार आपका हार्दिक स्वागत करता है!</p>
+    <!-- <div class="mt-6 md:mt-8 flex justify-center gap-6 md:gap-8 text-2xl md:text-3xl">
+      <a href="#" class="hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-gold transition"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-gold transition"><i class="fas fa-envelope"></i></a>
+    </div> -->
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: false, mirror: true, easing: 'ease-out-cubic' });
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: ['#D4A373', '#FF6B6B', '#FFD700'] }, shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true }, size: { value: 3, random: true },
+        move: { enable: true, speed: 2, direction: 'bottom', random: true }
+      },
+      interactivity: { events: { onhover: { enable: true, mode: 'repulse' } } },
+      retina_detect: true
+    });
+    function openModal() { document.getElementById('invitationModal').style.display = 'block'; }
+    function closeModal() { document.getElementById('invitationModal').style.display = 'none'; }
+    window.onclick = function (e) { if (e.target == document.getElementById('invitationModal')) closeModal(); }
+  </script>
+</body>
+
+</html>
